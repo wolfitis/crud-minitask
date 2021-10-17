@@ -27,6 +27,7 @@ $ npm start
 
 2. Create a new record
 > POST [http://localhost:3001/data](http://localhost:3001/data)
+
 Payload:
 ```
 {
@@ -78,6 +79,7 @@ Payload:
 
 3. Update a record using ID, also used for adding/removing any sub fields 
 > PUT [http://localhost:3001/data](http://localhost:3001/data)
+
 Payload:
 ```
 {
@@ -147,6 +149,7 @@ Payload:
 ```
 4. Delete a record using ID
 > DELETE [http://localhost:3001/data](http://localhost:3001/data)
+
 Payload:
 ```
 {
