@@ -1,0 +1,36 @@
+{
+  "name": "mini-task",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "npm run build && node dist/server/index.js",
+    "dev": "nodemon src/server --exec babel-node",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "lint": "eslint src/ --fix",
+    "test": "NODE_ENV=test mocha src/tests/**/*.test.js --require @babel/register --collect-coverage --exit"
+  },
+  "dependencies": {
+    "babel-plugin-module-resolver": "^4.1.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.4",
+    "dotenv": "^8.6.0",
+    "express": "~4.16.1",
+    "mongoose": "^6.0.10",
+    "morgan": "~1.9.1",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.13",
+    "debug": "^4.3.1",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  }
+}
