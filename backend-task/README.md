@@ -19,7 +19,7 @@ Start the application server in production mode
 $ npm start
 ```
 
-### Make API calls against the server 
+### How to use
 *Below examples assume you are using postman to interact with backend*
 
 1. Fetch all records from database
